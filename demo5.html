@@ -1,0 +1,58 @@
+
+<html>
+<head>
+
+<style>
+input[type="textarea"]{
+  background-color:yellow;
+  width:84%;
+  height:8em;
+}
+input[type="button"] {
+  background-color:pink;
+  border-color: cornsilk;
+  width:20%;
+  
+  font-size:3em;
+   
+} 
+</style>
+<script>
+ 
+   function f4(e) {
+    scr.value = scr.value + e.value
+   }
+   function cls(){
+     scr.value=''
+   }
+   function tocalc(){
+     scr.value=eval(scr.value).toPrecision(15)
+	 
+   }
+</script>
+</head>
+<body>
+ <input type="textarea" id="scr" width="80%"> <br/>
+ <input type="button"  value="(" onclick='f4(this)'>
+ <input  type="button"  value=")" onclick='f4(this)'> 
+ <input  type="button"  value="%" onclick='f4(this)'> 
+ <input  type="button"  value="C" onclick='cls()'> <br/>
+ <input  type="button"  value="7" onclick='f4(this)'> 
+ <input  type="button"  value="8" onclick='f4(this)'> 
+ <input  type="button"  value="9" onclick='f4(this)'> 
+ <input  type="button"  value="/" onclick='f4(this)'> <br/>
+  <input  type="button"  value="4" onclick='f4(this)'> 
+ <input  type="button"  value="5" onclick='f4(this)'> 
+ <input  type="button"  value="6" onclick='f4(this)'> 
+ <input  type="button"  value="*" onclick='f4(this)'> <br/>
+ <input  type="button" value="1" onclick='f4(this)'>
+ <input  type="button"  value="2" onclick='f4(this)'> 
+ <input  type="button"  value="3" onclick='f4(this)'> 
+ <input  type="button"  value="-" onclick='f4(this)'> <br/>
+ <input  type="button"  value="0" onclick='f4(this)'> 
+  <input  type="button"  value="." onclick='f4(this)'> 
+   <input  type="button"  value="=" onclick='tocalc()'> 
+ <input  type="button"  value="+" onclick='f4(this)'>    
+  
+</body>
+</html>
